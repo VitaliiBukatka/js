@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello world</h1>
+    <div></div>
+    <!-- - создать 5 объектов. В каждом объекте не менее 3х полей. Все объекты разные по набору полей. (Т.е поле name  должно присутствовать только 1 раз в одном объекте )
+    - создать 5 объектов с полностью разным набором полей. В каждом объекте должен присутсвовать массив и внутренний объект. Опишите что угодно, машину, картину, болт... Пример : let man = { name: 'kokos', skills : ['java','js'] , wife: { name: 'cherry' } };
+    - При помощи for in вывести все ключи всех объектов из задания 1 и 2
+    - При помощи Object.keys вывести все ключи всех объектов из задания 1 и 2 -->
+
+
+
+    <script>
+        const me = {
+            name: 'Vitalii',
+            surname: 'Bukatka',
+            age: '34',
+            exp: '0',
+            wife: 'Alla'
+        }
+        const capitalOfCities = {
+            ukraine: 'Kyiv',
+            poland: 'Warshawa',
+            romania: 'Buharest',
+            germany: 'Berlin',
+            france: 'Paris'
+        }
+        const modelCars = {
+            ford: 'mondeo',
+            honda: 'accord',
+            toyota: 'camry',
+            mercedes: 'sprinter',
+            volkswagen: 'golf'
+        }
+        const weatherForWorkWeek = {
+            monday: 'rain',
+            tuesday: 'sun',
+            wednesday: 'snow',
+            thursday: 'cold',
+            friday: 'cloudy'
+        }
+        const agePeople = {
+            Alla: '35',
+            Ivan: '37',
+            Anna: '29',
+            Anita: '17',
+            Nastya: '12'
+        }
+
+        let mustang = { 
+            graduationYear: '2020', 
+            engine: '5.0', 
+            body: 'sport',
+            power: ['muscle', 'unlimited'],
+            color: {oneHalf: 'red', secondHalf: 'white'}
+        }
+        let bmwM5 = { 
+            graduationYear: '2019', 
+            engine: '4.0', 
+            body: 'cupe',
+            power: ['best', 'full'],
+            color: {oneHalf: 'black', secondHalf: 'yellow'}
+        }
+        let acura = { 
+            graduationYear: '2018', 
+            engine: '3.7', 
+            body: 'sedan',
+            power: ['many', 'cool'],
+            color: {oneHalf: 'blue', secondHalf: 'gray'}
+        }
+        let golf = { 
+            graduationYear: '2005', 
+            engine: '2.0', 
+            body: 'small',
+            power: ['notEnough', 'notMany'],
+            color: {oneHalf: 'green', secondHalf: 'violet'}
+        }
+        let prius = { 
+            graduationYear: '2015', 
+            engine: '1.0', 
+            body: 'liftback',
+            power: ['veryLittle', 'eco'],
+            color: {oneHalf: 'purple', secondHalf: 'dark'}
+        }
+        for (const key in me){
+            console.log(key);
+        }
+        for (const key in capitalOfCities){
+            console.log(key);
+        }
+        for (const key in modelCars){
+            console.log(key);
+        }
+        for (const key in weatherForWorkWeek){
+            console.log(key);
+        }
+        for (const key in agePeople){
+            console.log(key);
+        }
+
+        Object.entries(mustang).forEach(([key]) =>
+        console.log(`${key}`));
+        Object.entries(bmwM5).forEach(([key]) =>
+        console.log(`${key}`));
+        Object.entries(acura).forEach(([key]) =>
+        console.log(`${key}`));
+        Object.entries(golf).forEach(([key]) =>
+        console.log(`${key}`));
+        Object.entries(prius).forEach(([key]) =>
+        console.log(`${key}`));
+        
+        
+    </script>
+    
+</body>
+</html>
