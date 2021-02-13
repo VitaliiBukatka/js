@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massive</title>
+</head>
+<body>
+
+    <!-- - Создать массив из 10 объектов cars и заполнить его машинами с полями модель, год выпуска, мощность, цвет. (Значаения полей могу быть выдуманными)
+- Создать массив объектов cities и заполнть его объектами с полями название, популяция, страна, регион. (Значения полей могу быть выдуманными)
+- Создать массив объектов cars и заполнить его машинами с полями модель, год выпуска, мощность, цвет, водитель. Водитель является отдельным объектом с полями имя, возраст, пол, стаж.
+- проитерировать каждый массив из задания 5,6,7 при помощи while.
+- проитерировать каждый массив из задания 5,6,7 при помощи for .
+- проитерировать каждый массив из задания 5,6,7 при помощи  for of. -->
+
+
+
+
+    <script>
+        let cars = [
+            {model: 'honda', power: 2, graduationYear: 2007, color: 'black'},
+            {model: 'golf', power: 3, graduationYear: 2008, color: 'white'},
+            {model: 'crv', power: 4, graduationYear: 2009, color: 'red'},
+            {model: 'bmw', power: 5, graduationYear: 2001, color: 'green'},
+            {model: 'audi', power: 6, graduationYear: 2002, color: 'purple'},
+            {model: 'uaz', power: 7, graduationYear: 2003, color: 'blue'},
+            {model: 'lanos', power: 8, graduationYear: 2004, color: 'violet'},
+            {model: 'passsat', power: 9, graduationYear: 2005, color: 'yellow'},
+            {model: 'toyota', power: 10, graduationYear: 2006, color: 'orange'},
+            {model: 'lancer', power: 11, graduationYear: 2010, color: 'grey'}
+        ]
+        // for (let x of cars){
+        //     console.log(x);
+        // }
+
+        // for (let index = 0; index < cars.length; index++){
+        //     console.log(cars[index]);
+        // }
+
+        // let index = 0;
+        // while (index < cars.length){
+        //     console.log(cars[index]);
+        //     index++;
+        // }
+
+
+    
+        
+
+        let countries = [
+            {country: 'ukraine', city: 'kyiv', region: 'europe', population: 38},
+            {country: 'germany', city: 'berlin', region: 'europe', population: 80},
+            {country: 'belarus', city: 'minsk', region: 'europe', population: 54},
+            {country: 'usa', city: 'newYork', region: 'na', population: 140},
+            {country: 'egypt', city: 'cairo', region: 'africa', population: '30'}
+        ]
+        for (let x of countries){
+            console.log(x);
+        }
+
+        for (let index = 0; index < countries.length; index++){
+            console.log(countries[index]);
+        }
+
+        let index = 0;
+        while (index < countries.length){
+            console.log(countries[index]);
+            index++;
+        }
+
+    </script>
+    
+</body>
+</html>
