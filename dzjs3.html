@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <!-- - Создать массив пользователей. У каждого пользователя обязательно должено быть поле skills которое является массивом. Проитерировать массив пользователей и в каждом пользователе проитерировать его массив skills
+    - Создать массив пользователей. У каждого пользователя обязательно должено быть поле skills которое является массивом. Проитерировать массив пользователей и в каждом пользователе проитерировать его массив skills. Скопировать все skills всех пользователей в отедльный массив
+     -->
+
+
+    <script>
+
+            let users = [
+                {name: 'vova', age: 23, skills: ['js', 'html', 'python']},
+                {name: 'vasya', age: 24, skills: ['js', 'html', 'css']},
+                {name: 'alla', age: 27, skills: ['js', 'html', 'java']},
+                {name: 'tolya', age: 25, skills: ['js', 'html', 'qa']},
+                {name: 'anita', age: 22, skills: ['js', 'html', 'java', 'css']}
+            ]
+
+            for ( let key of users)
+            console.log(key);
+
+            for ( let key of users)
+            console.log(key.skills[2]);
+            
+            for ( let index = 0; index < users.length; index++)
+            console.log(users[index]);
+
+            for ( let index = 0; index < users.length; index++)
+            console.log(users[index].skills);
+            
+            let clone = users.slice(0);
+            console.log(clone[0].skills, clone[1].skills, clone[2].skills, clone[3].skills, clone[4].skills);
+
+
+    </script>
+</body>
+</html>
