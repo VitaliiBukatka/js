@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+<!-- 
+    - За допомогою 2х циклів проітеррувати  даний масив і масив кожного
+    об'єкта. -->
+
+    <script>
+
+        let users = [
+            {name: 'vasya', age: 31, status: false, skills: ['java', 'js']},
+            {name: 'petya', age: 30, status: true, skills: ['java', 'js', 'html']}, 
+            {name: 'kolya', age: 29, status: true, skills: ['mysql', ',mongo']}, 
+            {name: 'olya', age: 28, status: false, skills: ['java', 'js']}, 
+            {name: 'max', age: 30, status: true, skills: ['mysql', ',mongo']}];
+
+            for (let x of users)
+            console.log(x);
+            
+            for (let index = 0; index < users.length; index++){
+            console.log(users[index]);
+            }
+
+            for (let a of users)
+            console.log(a.skills);
+
+            for (let index = 0; index < users.length; index++){
+            console.log(users[index].skills);
+            }
+            
+    </script>
+</body>
+</html>
