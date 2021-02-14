@@ -88,32 +88,27 @@
             power: ['veryLittle', 'eco'],
             color: {oneHalf: 'purple', secondHalf: 'dark'}
         }
-        for (const key in me){
-            console.log(key);
-        }
-        for (const key in capitalOfCities){
-            console.log(key);
-        }
-        for (const key in modelCars){
-            console.log(key);
-        }
-        for (const key in weatherForWorkWeek){
-            console.log(key);
-        }
-        for (const key in agePeople){
-            console.log(key);
-        }
-
-        Object.entries(mustang).forEach(([key]) =>
-        console.log(`${key}`));
-        Object.entries(bmwM5).forEach(([key]) =>
-        console.log(`${key}`));
-        Object.entries(acura).forEach(([key]) =>
-        console.log(`${key}`));
-        Object.entries(golf).forEach(([key]) =>
-        console.log(`${key}`));
-        Object.entries(prius).forEach(([key]) =>
-        console.log(`${key}`));
+        
+        let meJson = JSON.stringify(me)
+        console.log(meJson);
+        let capJson = JSON.stringify(capitalOfCities)
+        console.log(capJson);
+        let modJson = JSON.stringify(modelCars)
+        console.log(modJson);
+        let weathJson = JSON.stringify(weatherForWorkWeek)
+        console.log(weathJson);
+        let ageJson = JSON.stringify(agePeople)
+        console.log(ageJson);
+        let mustJson = JSON.stringify(mustang)
+        console.log(mustJson);
+        let bmwJson = JSON.stringify(bmwM5)
+        console.log(bmwJson);
+        let acJson = JSON.stringify(acura)
+        console.log(acJson);
+        let golfJson = JSON.stringify(golf)
+        console.log(golfJson);
+        let priusJson = JSON.stringify(prius)
+        console.log(priusJson);
         
         
     </script>

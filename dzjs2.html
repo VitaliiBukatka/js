@@ -8,12 +8,7 @@
 </head>
 <body>
 
-    <!-- - Создать массив из 10 объектов cars и заполнить его машинами с полями модель, год выпуска, мощность, цвет. (Значаения полей могу быть выдуманными)
-- Создать массив объектов cities и заполнть его объектами с полями название, популяция, страна, регион. (Значения полей могу быть выдуманными)
-- Создать массив объектов cars и заполнить его машинами с полями модель, год выпуска, мощность, цвет, водитель. Водитель является отдельным объектом с полями имя, возраст, пол, стаж.
-- проитерировать каждый массив из задания 5,6,7 при помощи while.
-- проитерировать каждый массив из задания 5,6,7 при помощи for .
-- проитерировать каждый масив из задания 5,6,7 при помощи  for of. -->
+    <!-- - взять массив из задания 5,в цикле перебрать его объекты превратив их в json . -->
 
 
 
@@ -31,20 +26,13 @@
             {model: 'toyota', power: 10, graduationYear: 2006, color: 'orange'},
             {model: 'lancer', power: 11, graduationYear: 2010, color: 'grey'}
         ]
-        // for (let x of cars){
-        //     console.log(x);
-        // }
 
-        // for (let index = 0; index < cars.length; index++){
-        //     console.log(cars[index]);
-        // }
+        let json = JSON.stringify (cars)
+        console.log(json);
 
-        // let index = 0;
-        // while (index < cars.length){
-        //     console.log(cars[index]);
-        //     index++;
-        // }
-
+        let jsoncParseCars = JSON.parse (json)
+        console.log(jsoncParseCars);
+  
 
     
         
@@ -56,19 +44,13 @@
             {country: 'usa', city: 'newYork', region: 'na', population: 140},
             {country: 'egypt', city: 'cairo', region: 'africa', population: '30'}
         ]
-        for (let x of countries){
-            console.log(x);
-        }
 
-        for (let index = 0; index < countries.length; index++){
-            console.log(countries[index]);
-        }
+        let jsonct = JSON.stringify (countries)
+        console.log(jsonct);
 
-        let index = 0;
-        while (index < countries.length){
-            console.log(countries[index]);
-            index++;
-        }
+        let jsoncParse = JSON.parse (jsonct)
+        console.log(jsoncParse);
+     
 
     </script>
     
