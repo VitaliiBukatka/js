@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello world</h1>
+    <div></div>
+    <!-- - взять объекты из задания 1 и превратить каждый в json.
+    - взять json из задания 11 и превратить их обратно в объекты. -->
+
+
+
+    <script>
+        const me = {
+            name: 'Vitalii',
+            surname: 'Bukatka',
+            age: '34',
+            exp: '0',
+            wife: 'Alla'
+        }
+        const capitalOfCities = {
+            ukraine: 'Kyiv',
+            poland: 'Warshawa',
+            romania: 'Buharest',
+            germany: 'Berlin',
+            france: 'Paris'
+        }
+        const modelCars = {
+            ford: 'mondeo',
+            honda: 'accord',
+            toyota: 'camry',
+            mercedes: 'sprinter',
+            volkswagen: 'golf'
+        }
+        const weatherForWorkWeek = {
+            monday: 'rain',
+            tuesday: 'sun',
+            wednesday: 'snow',
+            thursday: 'cold',
+            friday: 'cloudy'
+        }
+        const agePeople = {
+            Alla: '35',
+            Ivan: '37',
+            Anna: '29',
+            Anita: '17',
+            Nastya: '12'
+        }
+
+        let mustang = { 
+            graduationYear: '2020', 
+            engine: '5.0', 
+            body: 'sport',
+            power: ['muscle', 'unlimited'],
+            color: {oneHalf: 'red', secondHalf: 'white'}
+        }
+        let bmwM5 = { 
+            graduationYear: '2019', 
+            engine: '4.0', 
+            body: 'cupe',
+            power: ['best', 'full'],
+            color: {oneHalf: 'black', secondHalf: 'yellow'}
+        }
+        let acura = { 
+            graduationYear: '2018', 
+            engine: '3.7', 
+            body: 'sedan',
+            power: ['many', 'cool'],
+            color: {oneHalf: 'blue', secondHalf: 'gray'}
+        }
+        let golf = { 
+            graduationYear: '2005', 
+            engine: '2.0', 
+            body: 'small',
+            power: ['notEnough', 'notMany'],
+            color: {oneHalf: 'green', secondHalf: 'violet'}
+        }
+        let prius = { 
+            graduationYear: '2015', 
+            engine: '1.0', 
+            body: 'liftback',
+            power: ['veryLittle', 'eco'],
+            color: {oneHalf: 'purple', secondHalf: 'dark'}
+        }
+        
+        let meJson = JSON.stringify(me)
+        console.log(meJson);
+        let capJson = JSON.stringify(capitalOfCities)
+        console.log(capJson);
+        let modJson = JSON.stringify(modelCars)
+        console.log(modJson);
+        let weathJson = JSON.stringify(weatherForWorkWeek)
+        console.log(weathJson);
+        let ageJson = JSON.stringify(agePeople)
+        console.log(ageJson);
+        let mustJson = JSON.stringify(mustang)
+        console.log(mustJson);
+        let bmwJson = JSON.stringify(bmwM5)
+        console.log(bmwJson);
+        let acJson = JSON.stringify(acura)
+        console.log(acJson);
+        let golfJson = JSON.stringify(golf)
+        console.log(golfJson);
+        let priusJson = JSON.stringify(prius)
+        console.log(priusJson);
+
+        let meJsona = JSON.parse(meJson)
+        console.log(meJsona);
+        let capJsonb = JSON.stringify(capitalOfCities)
+        console.log(capJsonb);
+        let modJsonc = JSON.stringify(modelCars)
+        console.log(modJsonc);
+        let weathJsond = JSON.stringify(weatherForWorkWeek)
+        console.log(weathJsond);
+        let ageJsone = JSON.stringify(agePeople)
+        console.log(ageJsone);
+        let mustJsonf = JSON.stringify(mustang)
+        console.log(mustJsonf);
+        let bmwJsong = JSON.stringify(bmwM5)
+        console.log(bmwJsong);
+        let acJsonh = JSON.stringify(acura)
+        console.log(acJsonh);
+        let golfJsoni = JSON.stringify(golf)
+        console.log(golfJsoni);
+        let priusJsonj = JSON.stringify(prius)
+        console.log(priusJsonj);
+        
+        
+    </script>
+    
+</body>
+</html>
